@@ -93,7 +93,7 @@ export default function Login() {
               padding: "12px",
               borderRadius: "8px",
               border: "none",
-              backgroundColor: "#6A0DAD", // PURPLE
+              backgroundColor: "#6A0DAD",
               color: "#ffffff",
               fontSize: "16px",
               fontWeight: "600",
@@ -104,6 +104,7 @@ export default function Login() {
           </button>
         </form>
 
+        {/* Fixed footer links section */}
         <p
           style={{
             textAlign: "center",
@@ -112,11 +113,22 @@ export default function Login() {
           }}
         >
           Don’t have an account?{" "}
-          <Link to="/register" style={{ color: "#6A0DAD", textDecoration: "underline" }}>
+          <Link
+            to="/register"
+            style={{ color: "#6A0DAD", textDecoration: "underline" }}
+          >
             Register
           </Link>
-          < p />
-          Home page{" "}
+        </p>
+
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "8px",
+            color: "#4b5563",
+          }}
+        >
+          Back to{" "}
           <Link
             to="/"
             style={{ color: "#6A0DAD", textDecoration: "underline" }}
